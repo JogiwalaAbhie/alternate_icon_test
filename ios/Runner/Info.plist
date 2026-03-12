@@ -4,45 +4,52 @@
 <dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
-	<key>CFBundleIcons</key>
-	<dict>
-		<!-- Default app icon -->
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-		<key>CFBundleIconFiles</key>
-		<array>
-			<string>vanquish</string> <!-- default icon -->
-		</array>
-		<key>UIPrerenderedIcon</key>
-		<false/>
-		</dict>
-
-		<key>CFBundleAlternateIcons</key>
-		<dict>
-			<key>eigen</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-				<string>eigen</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>oxs</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-				<string>oxs</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-		</dict>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 	<string>Wl Demo Icon</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>black</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>black</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>galaxy</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>galaxy</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>gradient</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>gradient</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>black</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

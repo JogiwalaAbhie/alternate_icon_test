@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
 
-enum AppIcon { vanquish, eigen, oxs }
+enum AppIcon { black, gradient, galaxy }
 
 void main() {
   runApp(const MainApp());
@@ -23,7 +23,7 @@ class _MainAppState extends State<MainApp> {
     // Get initial app icon and set the currentIcon value
     FlutterDynamicIcon.getAlternateIconName().then((iconName) {
       setState(() {
-        currentIcon = AppIcon.values.byName(iconName ?? 'vanquish');
+        currentIcon = AppIcon.values.byName(iconName ?? 'black');
       });
     });
     super.initState();
@@ -31,12 +31,12 @@ class _MainAppState extends State<MainApp> {
 
   void changeAppIcon(AppIcon icon) async {
     try {
+      // Check if the device supports alternate icons
       if (await FlutterDynamicIcon.supportsAlternateIcons) {
-        await FlutterDynamicIcon.setAlternateIconName(
-          icon == AppIcon.vanquish ? null : icon.name, // null = default icon
-        );
+        // Change the icon
+        await FlutterDynamicIcon.setAlternateIconName(icon.name);
         setState(() {
-          currentIcon = icon;
+          currentIcon = icon; // Update the currentIcon value
         });
       }
     } on PlatformException catch (_) {
