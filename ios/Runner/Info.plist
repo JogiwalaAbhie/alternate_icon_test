@@ -9,44 +9,30 @@
 		<!-- Default app icon -->
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>vanquish</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<false/>
+		<key>CFBundleIconFiles</key>
+		<array>
+			<string>vanquish</string> <!-- default icon -->
+		</array>
+		<key>UIPrerenderedIcon</key>
+		<false/>
 		</dict>
 
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<!-- First custom icon - Black -->
-			<key>vanquish</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>vanquish</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-
-			<!-- Second custom icon - Gradient -->
 			<key>eigen</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>eigen</string>
+				<string>eigen</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-
-			<!-- Third custom icon - Galaxy -->
 			<key>oxs</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>oxs</string>
+				<string>oxs</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>

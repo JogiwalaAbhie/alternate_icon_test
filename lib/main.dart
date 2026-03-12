@@ -31,12 +31,12 @@ class _MainAppState extends State<MainApp> {
 
   void changeAppIcon(AppIcon icon) async {
     try {
-      // Check if the device supports alternate icons
       if (await FlutterDynamicIcon.supportsAlternateIcons) {
-        // Change the icon
-        await FlutterDynamicIcon.setAlternateIconName(icon.name);
+        await FlutterDynamicIcon.setAlternateIconName(
+          icon == AppIcon.vanquish ? null : icon.name, // null = default icon
+        );
         setState(() {
-          currentIcon = icon; // Update the currentIcon value
+          currentIcon = icon;
         });
       }
     } on PlatformException catch (_) {
