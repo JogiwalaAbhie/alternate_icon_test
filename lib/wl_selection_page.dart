@@ -7,6 +7,13 @@ import 'main_app_page.dart';
 class WLSelectionPage extends StatelessWidget {
   const WLSelectionPage({super.key});
 
+  Widget _buildLogo(String? assetPath) {
+    if (assetPath == null || assetPath.isEmpty) {
+      return const FlutterLogo(size: 40);
+    }
+    return Image.asset(assetPath, width: 40);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +23,7 @@ class WLSelectionPage extends StatelessWidget {
         itemBuilder: (context, index) {
           final wl = wlList[index];
           return ListTile(
-            leading: Image.asset(wl.logoAsset, width: 40),
+            leading: _buildLogo(wl.logoAsset),
             title: Text(wl.name),
             onTap: () async {
               // Change Home screen icon (iOS)

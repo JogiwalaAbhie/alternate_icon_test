@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
 
-enum AppIcon {
-  black,
-  gradient,
-  galaxy,
-}
+enum AppIcon { vanquish, eigen, oxs }
 
 void main() {
   runApp(const MainApp());
@@ -64,10 +60,7 @@ class _MainAppState extends State<MainApp> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       if (currentIcon == appIcon)
-                        const Icon(
-                          Icons.check,
-                          color: Colors.green,
-                        ),
+                        const Icon(Icons.check, color: Colors.green),
                       Text('Change to ${appIcon.name} icon'),
                     ],
                   ),
